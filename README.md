@@ -1,84 +1,183 @@
-Predictive Maintenance Project (ANN & Streamlit)
+# ⚙️ Predictive Maintenance System (ANN + Streamlit)
 
-This project implements a dynamic Predictive Maintenance system using an Artificial Neural Network (ANN) and is deployed via a Streamlit web interface. It fulfills the requirements for Machine Learning, ANN, AI (deployment), and Optimization Techniques (Adam optimizer).
+This project delivers an intelligent Predictive Maintenance system built with Machine Learning and Deep Learning techniques. It automatically identifies whether data is meant for failure classification or RUL prediction and trains the appropriate model—ANN for static sensor data and LSTM for time-series sequences. Using Adam Optimization and Early Stopping, the system achieves strong performance with high Recall, high R², and low RMSE. The integrated Streamlit interface allows users to upload datasets, train models, and generate real-time failure risk or RUL predictions, making it a complete AI solution for Industry 4.0 machinery maintenance.
 
-Project Structure
+---
 
+## 🎯 Purpose
+To build an **AI-driven maintenance system** capable of:
+
+- Predicting machine failure (classification)
+- Estimating Remaining Useful Life (RUL) (regression)
+- Supporting both ANN and LSTM deep learning models
+- Offering real-time sensor-based predictions through an intuitive web UI
+
+---
+
+## 🧠 Core Features
+
+✅ **Dataset Auto-Detection**  
+✔ Detects whether the uploaded dataset is AI4I (classification) or NASA C-MAPSS (RUL regression)
+
+✅ **ANN Model for Failure Classification**  
+✔ Trains using Adam optimizer, multiple hidden layers, and early stopping  
+
+✅ **LSTM Model for RUL Regression**  
+✔ Automatically processes sequence data for life prediction  
+
+✅ **Interactive Web Interface (Streamlit)**  
+✔ Dataset upload  
+✔ Model training  
+✔ Real-time prediction using sliders  
+
+✅ **Performance Metrics**  
+✔ Accuracy, Precision, Recall (Classification)  
+✔ R², RMSE (Regression)  
+
+---
+
+## ⚙️ Technologies Used
+
+### 🔹 Machine Learning & Deep Learning  
+- **TensorFlow / Keras** — ANN & LSTM architecture  
+- **scikit-learn** — preprocessing, metrics  
+
+### 🔹 Data Processing  
+- **pandas**, **numpy**
+
+### 🔹 Web Deployment  
+- **Streamlit**
+
+### 🔹 Visualization  
+- **matplotlib**, **seaborn**
+
+### 🔹 Optimization  
+- **Adam optimizer**
+
+---
+### Project Flowchart
+<img width="1000" height="900" alt="flowchart" src="https://github.com/user-attachments/assets/e52089b4-b49d-4305-9122-de6b60345064" />
+
+---
+
+## 📂 Project Structure
 predictive-maintenance-project/
-├── app.py              # Main Streamlit application and ML/ANN logic.
-├── requirements.txt    # Python dependencies.
-└── README.md           # This file.
+
+├── app.py                     # Main Streamlit application with ANN/LSTM logic
+
+├── requirements.txt           # All dependencies
+
+└── README.md                  # Documentation
 
 
-Setup and Execution (VS Code)
+---
 
-Step 1: Clone or Create the Project
+## 📦 Installation & Run Instructions
 
-Create a new folder named predictive-maintenance-project.
+### 1️⃣ Clone the repository
 
-Place app.py and requirements.txt inside this folder.
+```bash
+git clone https://github.com/yourusername/predictive-maintenance-project
 
-Open the folder in VS Code.
+```
+---
+### 2️⃣ Navigate into the directory
+```bash
+cd predictive-maintenance-project
+```
+---
+### 3️⃣ Create a virtual environment
+```bash
+python -m venv venv
+```
+---
+### 4️⃣ Activate the environment
 
-Step 2: Create a Virtual Environment
+| OS          | Command                    |
+| ----------- | -------------------------- |
+| Windows     | `.\venv\Scripts\activate`  |
+| Linux/macOS | `source venv/bin/activate` |
 
-It is highly recommended to use a virtual environment to manage dependencies:
+---
 
-# Create environment
-# Note: Use 'python' for Windows, and 'python3' for Linux/macOS
-python -m venv venv 
+### 5️⃣ Install dependencies
+```
+pip install -r requirements.txt
+```
+---
+### 6️⃣ Run the Streamlit App
+```
+streamlit run app.py
+```
+---
+
+### ⭐ Your browser will open automatically at:
+```
+http://localhost:8501
+```
+---
+### ▶️ Usage
+### 🔹 Step 1 — Upload Dataset
+
+Click “Upload Dataset (.txt or .csv)” and upload either:
+
+AI4I 2020 Predictive Maintenance dataset (CSV)
+
+NASA C-MAPSS dataset (TXT)
+
+### 🔹 Step 2 — Train the Model
+
+Click “Train Predictive Model (Auto-Detect)”
+The system will:
+
+Identify dataset type
+
+Preprocess data
+
+Train ANN (classification) or LSTM (regression)
+
+Display performance metrics
+
+### 🔹 Step 3 — Real-Time Prediction
+
+## Using the prediction panel:
+
+Adjust sliders for temperature, vibration, speed, load
+
+Click “Predict Failure Risk” or “Predict RUL”
+
+📊 Output will appear instantly on the dashboard.
+
+---
+### 💬 Sample Inputs & Outputs
+
+Upload: AI4I_2020.csv
+
+Upload: C-MAPSS_TRAIN_FD001.txt
+
+Adjust sliders for simulated machine readings
+
+Check predicted RUL or Failure Probability
+
+<img width="1919" height="908" alt="Screenshot 2025-12-04 144523" src="https://github.com/user-attachments/assets/194233ce-3c38-4546-9ad1-713a844c52da" />
+<img width="1750" height="637" alt="Screenshot 2025-12-04 150858" src="https://github.com/user-attachments/assets/1e7d50ef-a8f4-42ed-93b3-730108418662" />
+<img width="1751" height="526" alt="Screenshot 2025-12-04 150909" src="https://github.com/user-attachments/assets/5a873696-7a7d-4665-89eb-9b118fc717a4" />
+<img width="1752" height="436" alt="Screenshot 2025-12-04 150920" src="https://github.com/user-attachments/assets/e3b33261-dd9b-44f1-8ff0-5b8c3450c7f4" />
+<img width="1357" height="608" alt="Screenshot 2025-12-04 150934" src="https://github.com/user-attachments/assets/ed4ef95f-9bde-464c-b875-fd3815c2d99f" />
+
+---
+### 📜 License
+This project is licensed under the MIT License — free to use, modify, improve, and distribute with proper credit.
+
+---
+### 👨‍💻 Developed By
+
+Chaitanya Bhosale
+
+🔗 GitHub: https://github.com/Chaitanya5068
+
+🔗 LinkedIn: https://www.linkedin.com/in/chaitanya-bhosale
 
 
-Step 3: Activate the Virtual Environment
-
-Activate the environment based on your operating system.
-
-OS
-
-Activation Command
-
-Windows (PowerShell)
-
-.\venv\Scripts\activate
-
-Linux / macOS
-
-source venv/bin/activate
-
-Step 4: Install Dependencies
-
-With the environment activated, install all required libraries:
-
-  pip install -r requirements.txt
 
 
-Step 5: Run the Application
-
-Execute the Streamlit application from your terminal:
-
-treamlit run app.py
-
-
-This command will launch the application in your default web browser (usually at http://localhost:8501).
-
-How to Use the Web Interface
-
-Data Upload:
-
-Find a suitable dataset (e.g., the AI4I 2020 Predictive Maintenance CSV or NASA C-MAPSS TXT files).
-
-Click "Upload Dataset (.txt or .csv)" to upload your file.
-
-Model Training (Auto-Detection):
-
-Click the "Train Predictive Model (Auto-Detect)" button.
-
-The system will automatically detect if the data is suitable for ANN Binary Classification (AI4I 2020) or LSTM RUL Regression (NASA C-MAPSS).
-
-The model will train and display the final performance metrics, including Accuracy/Recall (Classification) or $R^2$/RMSE (Regression).
-
-Interactive Prediction:
-
-Use the sliders and number inputs in Section 2 to simulate real-time sensor readings for a machine.
-
-Click "Predict Failure Risk" (Classification) or "Predict RUL" (Regression) to get an immediate prediction and risk assessment.
